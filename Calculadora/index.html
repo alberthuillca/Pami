@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+
+        <center>
+            
+            <div id ="calcu">
+        <div id="estandar">
+            <p><i class="fas fa-bars"></i>&nbsp;&nbsp;Estandar</p>
+        </div>
+        <div id="clock">
+                <i class="fas fa-history"></i>
+        </div>
+        
+                <div class="contenedor">
+                    <form>
+                        <table>
+    
+                            <tr>
+                                <td colspan="4"><input class="text" name="display" id="campodetexto" type="text" value="0"></td>
+                            </tr>   
+                            
+                            <tr>
+                                <td><input class="columna1" id="clear" type="button" value="CE" onClick="this.form.display.value = 0 "></td>
+                                <td><input class="columna1" id="2" type="button" value="" onClick="addChar(this.form.display, '')"></td>
+                                <td><input class="columna1" id="3" type="button" value="" onClick="addChar(this.form.display, '')"></td>
+                                <td><input class="columna2" id="division" type="button" value="÷" onClick="addChar(this.form.display, '/')"></td>
+                            </tr> 
+                            <tr>
+                                <td><input class="columna1" id="7" type="button" value="7" onClick="addChar(this.form.display, '7')"></td>
+                                <td><input class="columna1" id="8" type="button" value="8" onClick="addChar(this.form.display, '8')"></td>
+                                <td><input class="columna1" id="9" type="button" value="9" onClick="addChar(this.form.display, '9')"></td>
+                                <td><input class="columna2" id="suma" type="button" value="x" onClick="addChar(this.form.display, '*')"></td>
+                            </tr>
+                            <tr>
+                                <td><input class="columna1" id="4" type="button" value="4" onClick="addChar(this.form.display, '4')"></td>
+                                <td><input class="columna1" id="5" type="button" value="5" onClick="addChar(this.form.display, '5')"></td>
+                                <td><input class="columna1" id="6" type="button" value="6" onClick="addChar(this.form.display, '6')"></td>
+                                <td><input class="columna2" id="resta" type="button" value="-" onClick="addChar(this.form.display, '-')"></td>
+                            </tr> 
+                            <tr>
+                                <td><input class="columna1" id="1" type="button" value="1" onClick="addChar(this.form.display, '1')"></td>
+                                <td><input class="columna1" id="2" type="button" value="2" onClick="addChar(this.form.display, '2')"></td>
+                                <td><input class="columna1" id="3" type="button" value="3" onClick="addChar(this.form.display, '3')"></td>
+                                <td><input class="columna2" id="multiplicacion" type="button" value="+" onClick="addChar(this.form.display, '+')"></td>
+                            </tr>  
+                            <tr>
+                                <td><input class="columna1" id="clear" type="button" value="" onClick="this.form.display.value = 0 "></td>
+                                <td><input class="columna1" id="0" type="button" value="0" onClick="addChar(this.form.display, '0')"></td>
+                                <td><input class="columna1" id="division" type="button" value="." onClick="addChar(this.form.display, '.')"></td>
+                                <td><input class="columna2" id="equals" type="button" value="=" onClick="if (checkNum(this.form.display.value))
+                                                                                                                  { compute(this.form) }"></td> 
+                            </tr>
+                             
+                            
+
+                            
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+            </center>
+    
+</body>
+</html>

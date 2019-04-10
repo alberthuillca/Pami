@@ -1,0 +1,56 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.contenedor{
+	position: relative;
+	top: 0px;
+}
+.text{
+	font-size: 30px;
+	font-family: Arial,Helvetica;
+	color:black;
+    border: 5px;
+	background: transparent;
+	width: 325.8px;
+	height: 80px;
+}
+.columna1{
+	font-size: 30px;
+	font-family: Arial,Helvetica;
+	color:black;
+	border: 2px;
+	background: white;
+	width: 80px;
+	height: 80px;
+}
+.columna2{
+	font-size: 30px;
+	font-family: Arial,Helvetica;
+	color:blck;
+    border: 2px;
+    border-color: gray;
+	background:lightgray;
+	width: 80px;
+	height: 80px;
+}
+
+#calcu{
+    margin: 50px 0px 0px 0px;
+    background: lightgray ;
+    width: 330px;
+    height: 630px;
+}
+
+#estandar{
+    margin: 0 auto;
+    padding: 30px 140px 0px 0px;
+    font-family: Arial,Helvetica;
+    font-size: 30px;
+
+}
+
+#clock{
+    margin: 0 auto;
+    padding: 0px 0px 50px 250px;
+}
